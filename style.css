@@ -1,0 +1,53 @@
+@font-face {
+    font-family: font-nice;
+    src: url(Heading-Now-Variable.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.loding{
+    width: 100%;
+    height: 100vh;
+    background-color: #3c3c3c;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loding h1{
+    font-size: 100px;
+  
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.page{
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.page h1{
+    font-size: 70vh;
+    color: #fff;
+    white-space: nowrap;
+    font-family: font-nice;
+    font-stretch: 300%;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color: #59595b;
+}
