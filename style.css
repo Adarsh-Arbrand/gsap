@@ -1,53 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dela+Gothic+One&family=Oswald:wght@200..700&family=Poppins:wght@500&family=Tilt+Neon&display=swap');
+
 @font-face {
-    font-family: font-nice;
-    src: url(Heading-Now-Variable.ttf);
+    font-family: Minecraftten;
+    src: url(media/MinecraftTen.ttf);
 }
 *{
     padding: 0;
     margin: 0;
-    color: #fff;
+    
 }
-html,body{
+body{
+    background-image: url(./media/bg-lightwool.png);
+    background-repeat: repeat;
+}
+
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: #ffff;
+    background-color: #171615;
+}
+header h2{
+    font-family: Minecraftten;
+    font-size: 40px;
+}
+.header-logo img{
+  height: 100%;
+  width: 100%;
+} 
+header img{
+    max-width: 200px;
+    max-height: 80px;
+    margin: 5px 10px;
+}
+/* end headre*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(media/bg-wool-dark.png);
+}
+.main-image{
+    max-width: 400px;
+}
+main h1{
+ font-size: 500%;
+ font-family: Minecraftten;
+ color: #ffff;
+
+} 
+main img{
     width: 100%;
     height: 100%;
 }
-.loding{
+.image{
+    background-image: url(media/trans-top-darkwool.png);
     width: 100%;
-    height: 100vh;
-    background-color: #3c3c3c;
-    z-index: 999;
-    position: fixed;
+    height: 100px;
+   
+}
+.form-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.form-video video{
+    max-width: 500px;
+    height: 300px;
+}
+.form-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(media/bg-wool-dark.png);
+    width: 100%;
+    height: 150px;
+}
+.form-titel h2{
+    font-size: 70px;
+    color: #ffff;
+    font-family: Minecraftten;
+    color: #3b8526;
+}
+/* form */
+.first-col-form,.second-col-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.first-col-form label ,.second-col-form label{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+.first-col-form input,.second-col-form input{
+   padding: 5px;
+   margin: 5px;
+   width: 250px;
+   height: 30px;
+   
+}
+.third-col-form,.forth-col-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.third-col-form label{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    margin-left: 15%;
+    padding-bottom: 20px;
+}
+.third-col-form input{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5px;
+   
+    height: 30px;
+}
+.form-button{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.loding h1{
-    font-size: 100px;
-  
-    
-}
-main{
+.form-button button{
+    padding:16px 40px ;
+    font-size: 18px;
+    border: none;
+    color: aliceblue;
+    background: #3b8526;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgba(0,0,0,.25);
+    margin: 40px 0;
+ }
+ .forth-col-form label{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    margin-left: 15%;
+    padding: 20px 0;
+ }
+ .forth-col-form textarea{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5px;
+ }
+/* end form */
+.bg-image{
     width: 100%;
-    height: 100%;
+    height: 100px;
+    background-image: url(media/trans-top-darkwool.png);
+    transform:rotate(180deg);
 }
-.page{
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
+/*Footer Style*/
+footer{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   background-image: url(media/bg-wool-dark.png);
+   width: 100%;
+   min-height:300px;
+   color: #ffff;
 }
-
-.page h1{
-    font-size: 70vh;
-    color: #fff;
-    white-space: nowrap;
-    font-family: font-nice;
-    font-stretch: 300%;
-    font-weight: 900;
-    text-transform: uppercase;
-    padding-left: 20px;
+.footer-social i{
+   padding: 10px;
+   font-size: 30px
 }
-.page2{
-    width: 100%;
-    height: 100%;
-    background-color: #59595b;
+#footer-logo-2{
+    display: flex;
+    gap: 10px;
+}
+#footer-logo-2 img{
+    position: relative;
+    top: -20px;
+    max-width: 100px;
+    max-height: 80px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo img{
+   max-width: 200px;
+   max-height: 200px;
+}
+.footer-social a{
+    text-decoration: none;
+    color: #ffff;
+}
+.footer-developer-detail h3{
+    font-family: "Oswald", sans-serif;
+}
+.footer-developer-detail a {
+    text-decoration: none;
+    color: #ffff;
 }
