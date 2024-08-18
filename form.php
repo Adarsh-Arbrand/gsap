@@ -1,5 +1,5 @@
 <?php
-$server = "localhost";
+$server = "https://adarsh-arbrand.github.io/gsap/";
 $username = "root";
 $password = "";
 $dbname = "Adarsh_Ar";
