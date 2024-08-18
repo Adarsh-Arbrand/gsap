@@ -10,7 +10,7 @@ if(!$con){
     echo "not connected";
 }
 
-$Name =$_POST['name'];
+$name =$_POST['name'];
 $gametag =$_POST['gametag'];
 $country =$_POST['country'];
 $email =$_POST['email'];
