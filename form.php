@@ -1,16 +1,16 @@
 <?php
-//get data from form  
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbname = "Adarsh_Ar";
 
-$name = $_POST['name'];
-$email= $_POST['email'];
-$to = "ranjanadarsh@mail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email;
-$headers = "From: adarsh-arbrand.github.io" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+$con = mysqli_connect($server, $username, $password, $dbname);
+ 
+if(!$con){
+    echo "not connected";
 }
-//redirect
-header("Location:succes.html");
+else{
+    echo "connect";
+}
+
 ?>
